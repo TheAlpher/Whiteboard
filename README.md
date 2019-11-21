@@ -1,4 +1,4 @@
-# Domwhiteboard
+# Whiteboard
 A DOM based  whiteboard with all the basic functionalities of a drawing board
 ## Functions
     ->  Pencil with variable width and multiple colour options

@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* overflow: hidden; */
+}
+.tools {
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: space-evenly;
+}
+.tool {
+  width: 3rem;
+}
+.active {
+  padding: 0.5rem;
+  background-color: grey;
+  border-radius: 50%;
+}
+.pencil,
+.eraser {
+  position: relative;
+}
+.pencil-options,
+.eraser-options {
+  top: 70px;
+  left: -50px;
+  position: absolute;
+  height: 8rem;
+  width: 10rem;
+  background-color: transparent;
+  border-radius: 0.7rem;
+  display: none;
+  padding:10px !important;
+  border:2px black solid;
+
+}
+.eraser-options {
+  height: 2.5rem;
+  width: 10rem;
+}
+.pencil-slider {
+  height: 2.5rem;
+  width: 8rem;
+  background-color: transparent;
+  margin-top: 1rem;
+}
+/* .slider {
+  position: relative;
+  left: 8%;
+  top: 0.5rem;
+  -webkit-appearance: none;
+  width: 80%;
+  height: 13px;
+  border-radius: 10px;
+  background-color: #4db6ac;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: aqua;
+  cursor: pointer;
+}
+
+slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: aqua;
+  cursor: pointer;
+} */
+input{
+  max-width:8rem !important;
+padding:5px;
+border:1px solid black !important;
+}
+
+.blue,
+.red,
+.black {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border:3px black solid;
+}
+.color-pallet {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.black {
+  background-color: black;
+}
+
+.show {
+  display: block;
+}
+
+/* sticky css*/
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+.close {
+  z-index: 50;
+  right: 11px;
+  display: block;
+  box-sizing: border-box;
+  width: 17px;
+  height: 17px;
+  border-radius: 50px;
+  background-color: #ff4757;
+  position: absolute;
+  top: 9px;
+}
+.writing-pad {
+  position: absolute;
+  max-height: 200px;
+  max-width: 246px;
+  /* background: #e1b12c;   */
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.minimize {
+  z-index: 50;
+  right: 36px;
+  display: block;
+  box-sizing: border-box;
+  width: 17px;
+  height: 17px;
+  border-radius: 50px;
+  background-color: #2ed573;
+  position: absolute;
+  top: 9px;
+}
+.sticky-pad {
+  z-index: 40;
+  /* min-height: 30px; */
+  min-width: 246px;
+  max-height: 200px;
+  max-width: 246px;
+  padding-top: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 0 15px 0 15px;
+  box-shadow: 9px 8px 18px 3px rgba(0, 0, 0, 0.4);
+  /* background: #e1b12c; */
+}
+.sticky-pad nav {
+  z-index: 41;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #57606f; /*#3b8ea5;  */
+  border-radius: 0px 15px 0px 0px;
+}
+.sticky-pad nav:hover {
+  cursor: move;
+}
+
+.sticky-pad textarea {
+  min-height: 200px;
+  width: 100%;
+
+  background: transparent;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 0px 15px 15px 0px;
+  border: none;
+  font-family: "Indie Flower", cursive;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+.sticky-pad textarea:focus,
+.sticky-pad textarea:active {
+  outline: none;
+}
+#fileInput {
+  display: none;
+}

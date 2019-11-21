@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="tools">
+    <div class="pencil active" id="pencil1">
+      <img src="./NewIcons/Black_Pencil.svg" class="pencil tool " alt="" onclick="handletoolChange('pencil')">
+<!-- options -->
+<div class="pencil-options">
+  <div class="pencil-slider">
+    <input type="range" min="5" max="60" value="5" oninput="changeSize(this.value)">
+  </div>
+  <div class="pencil-colors" style="display: flex;">
+    <div class="blue" onclick="handleColorChange('blue')" style="margin-left:1vh; margin-right: 1vh;">
+    </div>
+    <div class="red" onclick="handleColorChange('red')" style="margin-left:1vh; margin-right: 1vh;">
+    </div>
+    <div class="black" onclick="handleColorChange('black')" style="margin-left:1vh; margin-right: 1vh;">
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="eraser">
+      <img src="./NewIcons/Eraser.svg" class="eraser tool" alt="" onclick="handletoolChange('eraser')">
+      <div class="eraser-options">
+   
+        <div class="eraser-slider">
+
+          <input type="range" min="5" max="60" value="5" oninput="changeSize(this.value)">
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="sticky">
+      <img src="./NewIcons//StickyNote.svg" class="tool" alt="" onclick="handletoolChange('sticky')">
+    </div>
+    <div class="upload">
+      <a href="" id="fileSelector">
+        <img src="./NewIcons/Photo.svg" class="tool" alt="">
+      </a>
+      
+      <input type="file" name="" id="fileInput" accept="image/*">;
+    </div>
+    <div class="download">
+      <a href="">
+        <img src="./NewIcons/Download.svg" class="tool" alt="">
+      </a>
+    </div>
+    <div class="undo">
+      <img src="./NewIcons/Undo.svg" alt="" class="tool"></div>
+      
+    <div class="redo">
+      <img src="./NewIcons/Redo.svg" class="tool" alt="">
+    </div>
+
+
+
+  </div>
+
+  <canvas class="board"></canvas>
+
+
+
+  <script>
+    var board = document.querySelector(".board");
+    // gives viewPort Height
+    board.height = window.innerHeight/1.105;
+    // gives viewPort Width
+    board.width = window.innerWidth-1; 
+    // window.onresize=
+    // to get RenderingContext2D
+
+
+    var ctx = board.getContext("2d");
+
+  </script>
+  <script src="image.js"></script>
+  <script src="sticky.js"></script>
+  <script src="download.js"></script>
+  <script src="drawingtools.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

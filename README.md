@@ -1,7 +1,7 @@
-# Whiteboard
+## Whiteboard 
 A DOM based whiteboard which can be used to conduct educational classes/ online meetings. The whiteboard allows on-the-fly styling of drawing tools. Also supports additional functionalities like image sharing, complete board download, etc.
 
-## Current Functionality
+## Current Functionalities
     ->  Pencil with variable width and multiple colour options
     ->  Eraser with variable width
     ->  Notes Add/Drop
@@ -10,7 +10,7 @@ A DOM based whiteboard which can be used to conduct educational classes/ online 
     ->  Undo
     ->  Redo
     
-## Upcoming Functionality
+## Upcoming Functionalities
     -> Live collaboration using websockets
     -> Live chat
     -> Synchronized videos plugin
